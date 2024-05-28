@@ -5,8 +5,9 @@ echo ******************************************************
 echo Starting-BACKUP
 echo ******************************************************
 
+DB_NAME=${1:-"mydb"}
 NOW=$(date +'%Y%m%d_%H%M%S')
-FILE="$DB_NAME-$NOW.gz"
+FILE="$DB_NAME-$NOW-archive.gz"
 
 mongodump --gzip --uri=$MONGODB_URI --db=$DB_NAME --archive=$PWD/$FILE
 
