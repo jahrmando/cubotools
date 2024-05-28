@@ -1,6 +1,7 @@
 #!/bin/bash
 # Previusly you need to install aws-cli and configure it with your credentials
 # set envs: MONGODB_URI, DB_NAME, S3_BUCKET_NAME, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY
+# Usage: ./mongo-backup.sh mydb
 echo ******************************************************
 echo Starting-BACKUP
 echo ******************************************************
